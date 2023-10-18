@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJBa21hbCBSIiwiZW1haWwiOiJha21hbEBnbWFpbC5jb20iLCJpYXQiOjE2OTcwMTE1OTYsImV4cCI6MTY5NzAxMTYxNn0.MMJis2H3ikAJS5QHLA53yRK-RtRakfrSjXDlUCqbXIY
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Akmal R",
+    "email": "akmal@gmail.com",
+    "password": "akmalganteng",
+    "confPassword": "akmalganteng"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "akmal@gmail.com",
+    "password": "akmalganteng"
+}
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
